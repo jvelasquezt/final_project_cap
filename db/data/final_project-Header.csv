@@ -1,0 +1,21 @@
+ID,email,firstName,lastName,country_code,createOn,deliveryDate,orderStatus_code,imageUrl
+1,juan@gmail.com,Juan,Toro,Colombia,2025-04-03,2025-04-10,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+2,luisa@gmail.com,Luisa,Garcia,Spain,2025-03-04,2025-04-04,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+3,sara@gmail.com,Sara,Morales,Russia,2025-07-05,2025-07-07,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+4,jhon@gmail.com,Jhon,Granada,Colombia,2025-03-03,2025-03-04,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png
+5,alex@gmail.com,Alexander,Cuesta,Portugal,2025-02-03,2025-03-05,Rejected,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+6,jacobo@gmail.com,Jacobo,Dominguez,Peru,2025-06-07,2025-06-24,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+7,calvo@gmail.com,Luis,Calvo,Mexico,2025-06-07,2025-06-30,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+8,usuga@gmail.com,Marlon,Uribe,Mexico,2025-07-08,2025-08-01,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+9,samuel@gmail.com,Samuel,Chalarca,Brazil,2025-06-09,2025-06-18,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+10,james@gmail.com,James,Torres,Portugal,2025-02-10,2025-02-23,Rejected,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+11,paulina@gmail.com,Paulina,Zapata,Colombia,2025-06-05,2025-06-07,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+12,natalia@gmail.com,Natalia,Ford,Brazil,2025-06-05,2025-07-05,Rejected,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+13,paul@gmail.com,Paul,Restrepo,United States,2025-06-08,2025-06-09,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+14,cristian@gmail.com,Cristian,Gonzales,Brazil,2025-06-09,2025-06-15,Opened,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+15,camilo@gmail.com,Camilo,Cifuentes,Argentina,2025-07-06,2025-07-19,Rejected,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+16,sebastian@gmail.com,Sebastian,Yatra,Spain,2025-06-11,2025-06-14,Rejected,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+17,melany@gmail.com,Melany,Martinez,Netherlands,2025-06-03,2025-06-08,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+18,jeronimo@gmail.com,Jeronimo,Montecruz,Colombia,2025-07-12,2025-08-12,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 
+19,juanpa@gmail.com,Juan Pablo,Sarmiento,Argentina,2025-01-13,2025-02-19,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png
+20,miguel@gmail.com,Miguel,Ospina,Peru,2025-02-26,2025-03-12,Accepted,https://e7.pngegg.com/pngimages/59/109/png-clipart-riot-games-round-thumbnail-tech-companies.png 

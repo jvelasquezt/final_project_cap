@@ -1,0 +1,4 @@
+code,criticality,name,descr
+Accepted,3,Order Accepted
+Opened,2,Order Pending/Opened
+Rejected,1,Order Canceled
