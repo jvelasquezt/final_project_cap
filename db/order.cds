@@ -1,7 +1,6 @@
 namespace final_project;
 
 using {
-    sap.common.Countries,
     sap.common.Currencies,
     sap.common.CodeList
 } from '@sap/cds/common';
@@ -12,7 +11,8 @@ entity Header {
         email        : String(30);
         firstName    : String(30);
         lastName     : String;
-        country      : Association to Countries;
+        // country      : Association to Countries;
+        country : String(30);
         createOn     : Date;
         deliveryDate : Date;
         orderStatus  : Association to Status;

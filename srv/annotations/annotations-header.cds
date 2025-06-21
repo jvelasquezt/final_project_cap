@@ -1,4 +1,7 @@
 using {FinalProject as services} from '../service';
+using from './annotations-items';
+
+annotate services.Header with @odata.draft.enabled;
 
 annotate services.Header with {
     ID           @title: 'Id Order';
@@ -12,21 +15,61 @@ annotate services.Header with {
     imageUrl     @title: 'Image';
 };
 
+annotate services.Header with {
+    ID @Common : { 
+        ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Header',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : ID,
+                    ValueListProperty : 'ID',
+                }
+            ],
+        },
+     };
+
+     country @Common : { 
+        ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Header',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : country,
+                    ValueListProperty : 'country',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'firstName',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'ID',
+                }
+            ],
+        },
+     }
+};
+
+
 annotate services.Header with @(
     UI.HeaderInfo                   : {
         $Type         : 'UI.HeaderInfoType',
         TypeName      : 'Sell Order',
         TypeNamePlural: 'Sell Orders',
-        ImageUrl : imageUrl,
+        ImageUrl      : imageUrl,
         Title         : {
             $Type: 'UI.DataField',
             Value: ID,
-        }
+        },
+        Description   : {Value: `Order's data`}
     },
-
     UI.SelectionFields              : [
+        ID,
         orderStatus_code,
-        country_code
+        country
     ],
     Common.SemanticKey              : [ID],
     UI.LineItem                     : [
@@ -74,7 +117,7 @@ annotate services.Header with @(
         },
         {
             $Type                : 'UI.DataField',
-            Value                : country_code,
+            Value                : country,
             ![@HTML5.CssDefaults]: {
                 $Type: 'HTML5.CssDefaultsType',
                 width: '7rem',
@@ -106,11 +149,11 @@ annotate services.Header with @(
             },
             {
                 $Type: 'UI.DataField',
-                Value: country_code
+                Value: country
             }
         ]
     },
-        UI.FieldGroup #OrderInformation: {
+    UI.FieldGroup #OrderInformation : {
         $Type: 'UI.FieldGroupType',
         Data : [
             {
@@ -122,24 +165,28 @@ annotate services.Header with @(
                 Value: deliveryDate
             },
             {
-                $Type: 'UI.DataField',
-                Value: orderStatus_code,
+                $Type      : 'UI.DataField',
+                Value      : orderStatus_code,
                 Criticality: orderStatus.criticality
             }
         ]
     },
-    UI.HeaderFacets:[
+    UI.HeaderFacets                 : [
         {
-            $Type: 'UI.ReferenceFacet',
-            Target : '@UI.FieldGroup#ClientInformation',
+            $Type : 'UI.ReferenceFacet',
+            Target: '@UI.FieldGroup#ClientInformation',
             Label : 'Client Information'
         },
         {
-            $Type: 'UI.ReferenceFacet',
-            Target : '@UI.FieldGroup#OrderInformation',
+            $Type : 'UI.ReferenceFacet',
+            Target: '@UI.FieldGroup#OrderInformation',
             Label : 'Order Information'
         }
-    ]
+    ],
+    UI.Facets                       : [{
+        $Type : 'UI.ReferenceFacet',
+        Target: 'toHeader/@UI.LineItem',
+        Label : 'Item information'
+    }, ]
 
 );
-  
